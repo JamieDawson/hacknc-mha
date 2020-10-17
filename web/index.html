@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+
+		<script>
+			$(document).ready(function () {
+				$('button').click(function () {
+					$.getJSON(
+						'https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/plusUltra.json',
+						function (result) {
+							document.getElementById('allMightText').innerHTML = result.body;
+						}
+					);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Go Beyond</h1>
+		<img
+			src="https://media.comicbook.com/2018/03/all-might-1095725-1280x0.jpeg"
+			alt="almight"
+			width="250"
+		/>
+		<button>Click me</button>
+		<p id="allMightText"></p>
+	</body>
+</html>
