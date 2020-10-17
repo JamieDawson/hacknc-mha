@@ -7,12 +7,9 @@
 		<script>
 			$(document).ready(function () {
 				$('button').click(function () {
-					$.getJSON(
-						'https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/plusUltra.json',
-						function (result) {
-							document.getElementById('allMightText').innerHTML = result.body;
-						}
-					);
+					$.getJSON('', function (result) {
+						document.getElementById('allMightText').innerHTML = result.body;
+					});
 				});
 			});
 		</script>
